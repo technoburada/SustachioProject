@@ -1,0 +1,12 @@
+/* Animation for scrolling effect */
+.body.body.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When in viewport, elements will smoothly come up */
+.body.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

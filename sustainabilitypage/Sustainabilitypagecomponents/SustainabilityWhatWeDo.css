@@ -1,0 +1,238 @@
+.foodware-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Quality Standards Section */
+  .quality-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .quality-cards {
+    display: flex;
+    gap: 20px;
+  }
+
+  .quality-card:hover {
+  transform: scale(1.05);
+}
+  
+  .quality-card {
+    text-align: center;
+    background-color: #f8f6ec;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    width: 300px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .quality-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .quality-card h3 {
+    margin: 15px 0;
+    color: #4baf47;
+  }
+  
+  .quality-card button {
+    background-color: #4caf50; 
+    color: #fff; 
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-weight: 500; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .quality-card button:hover {
+    background-color: #EEC044;
+    transform: scale(1.05);
+  }
+
+  
+  .quality-card button svg {
+    transition: transform 0.3s ease; 
+  }
+  
+  .quality-card button:hover svg {
+    transform: translateX(5px); 
+  }
+  
+  /* Healthy Foodwares Section */
+  .healthy-foodwares {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+  }
+  
+  .content {
+    margin-left: 850px;
+  }
+  
+  .content h5 {
+    font-size: 18px;
+    color: #ffa500;
+    margin-bottom: 10px;
+  }
+  
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .icon-cards {
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+  }
+  
+  .icon-card {
+    text-align: center;
+    background-color: #EEC044;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    height: 90px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .icon-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-card i {
+    font-size: 40px;
+    color: #4baf47;
+  }
+  
+  .icon-card h4 {
+    margin-top: 10px;
+  }
+  
+  /* Image Section */
+  .image-section img {
+    width: 400px;
+    height: 400px;
+    border-radius: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    right: 1000px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .image-section img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer Section */
+  .footer-section1 {
+    text-align: center;
+    padding: 50px;
+    background-color: #C5CE38;
+    color: white;
+  }
+  
+  .footer-section1 h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section1 h3 span {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-section1 p {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color:#4baf47;
+  }
+
+
+  
+  .discover-button {
+    background-color: #4caf50; 
+    color: #fff; 
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 18px; 
+    font-weight: 500; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    top: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .discover-button:hover {
+    background-color: #ffa500;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .discover-button svg {
+    transition: transform 0.3s ease; 
+  }
+  
+  .discover-button:hover svg {
+    transform: translateX(5px); 
+  }
+
+  .readmorewhatwedo {
+    background-color: #4caf50; 
+    color: #fff; 
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-weight: 500; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    top: 30px;
+    left: 340px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .readmorewhatwedo:hover {
+    background-color: #ffa500;
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .readmorewhatwedo svg {
+    transition: transform 0.3s ease; 
+  }
+  
+  .readmorewhatwedo:hover svg {
+    transform: translateX(5px); 
+  }
+
+  

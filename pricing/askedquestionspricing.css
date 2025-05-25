@@ -1,0 +1,154 @@
+.pricingfaq-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.pricingfaq-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.pricingfaq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.pricingfaq-section {
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.pricingfaq-section-title {
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.pricingfaq-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: 1px solid #ddd;
+    margin-bottom: 15px; /* Adds space between questions */
+}
+
+.pricingfaq-item:hover {
+    background: #f5f5f5;
+    transform: scale(1.02);
+}
+
+.pricingfaq-question {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricingfaq-toggle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9800;
+    transition: transform 0.3s ease;
+}
+
+.pricingfaq-item.active .pricingfaq-toggle {
+    transform: rotate(180deg);
+}
+
+.pricingfaq-answer {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.pricingfaq-item.active .pricingfaq-answer {
+    opacity: 1;
+    max-height: 300px;
+}
+
+.pricinghelpcenter {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background: #f8f6ec;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.pricinghelpcenter h4 {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.pricinghelpcenter a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pricinghelpcenter a:hover {
+    text-decoration: underline;
+}
+
+
+/* Prompt Styles */
+.pricingfaq-prompt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .pricingfaq-avatar {
+    width: 300px;
+    height: 250px;
+    border-radius: 10%;
+    position: relative;
+    left: 200px;
+    margin-right: 1rem;
+    position: relative;
+    top: 30px;
+  }
+  
+  .pricingfaq-bubble {
+    background-color: #C5CE38;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    left: 200px;
+  }
+  
+  .pricingfaq-icon {
+    color: #4caf50;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,164 @@
+/* Root Variables */
+:root {
+    --primary-green: #4caf50;
+    --secondary-green: #c8e6c9;
+    --text-color: #333;
+    --background-color: #f9f9f9;
+  }
+  
+  /* Sustainability Hero Container */
+  .sustainability-hero {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+  }
+  
+  /* Hero Section Styling */
+  .sustainabilityhero-section1 {
+    position: relative;
+    height: 800px;
+    background-image: url('./heroimage.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .sustainabilityhero-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .sustainabilityhero-content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f3b200;
+  }
+  
+  .sustainabilityhero-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+
+
+  .sustainabilityhero-content h1:hover{
+    transform: scale(1.05);
+    color: #C5CE38;
+  }
+
+  .arrow { 
+    font-size: 1.5rem; 
+    color: #4CAF50; 
+    background-color: none;
+}
+  
+  
+  /* SDG Cards Section */
+  .sdg-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 20px;
+    max-width: 1200px;
+    background-color: #F8F7F0;
+  }
+  
+  .sdg-card {
+    width: 250px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .sdg-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .sdg-card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .sdg-card-content {
+    padding: 15px;
+  }
+  
+  .sdg-card-content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .read-more-button {
+    background-color: #4caf50; 
+    color: #fff; 
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    font-weight: 500; 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: #f3b200;
+  }
+
+  .read-more-button svg {
+    transition: transform 0.3s ease; 
+  }
+  
+  .read-more-button:hover svg {
+    transform: translateX(5px); 
+  }
+
+
+  /* Circular Icons Section */
+.sustainabilityhero-icons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  top: 680px;
+  z-index: 2; /* Ensure it appears above the background image */
+  margin-top: 100px;
+}
+
+.sustainabilityhero-icon-box {
+  background: #f9a826;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.sustainabilityhero-icon-box:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.5);
+}
+  

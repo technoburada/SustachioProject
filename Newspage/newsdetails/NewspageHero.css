@@ -1,0 +1,141 @@
+.newspage-hero {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.newspageslide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 730px;
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  position: relative;
+}
+
+.newspagecontent {
+  text-align: center; 
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  background-color: rgba(131, 130, 130, 0.7);
+}
+
+
+.newspagecontent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.newspagecontent p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.newspagecontent button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #4BAF47;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.newspagecontent button:hover {
+  background: #4BAF47;
+  transform: scale(1.05); 
+}
+
+/* SVG Styling */
+.newspagecontent button svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.newspagecontent button:hover svg {
+  transform: translateX(5px);
+}
+
+/* Fixed Navigation Arrows */
+.newspagecontrols {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents overlapping issues */
+}
+
+.newspagecontrols button {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  padding: 15px;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: all; 
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
+/* Add a smooth zoom-in effect */
+.newspagecontrols button:hover {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Fix button positions */
+.newspagecontrols button:first-child {
+  left: 20px; 
+}
+
+.newspagecontrols button:last-child {
+  right: 20px; 
+}
+
+
+/* Dots Styling */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #d1d5db;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background: #4BAF47;
+}

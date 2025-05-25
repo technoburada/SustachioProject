@@ -1,0 +1,62 @@
+/* General Styles */
+.company-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    background-color: #f8f6ec;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 300px;
+  }
+  
+  .company-logo {
+    width: 130px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .company-logo:hover {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .company-bar {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .company-logo {
+      width: 60px;
+    }
+  }
+
+/* Compare Features Section */
+.compare-bar {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .compare-button {
+    background-color: #FFC727;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .compare-button:hover {
+    background-color: #e6b800;
+  }
+  
+  .arrow {
+    font-size: 1.5rem;
+    color: #4CAF50;
+  }

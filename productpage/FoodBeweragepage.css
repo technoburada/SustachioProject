@@ -1,0 +1,146 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Product Page */
+.product-page {
+  text-align: center;
+  color: #333;
+  margin-top: 100px;
+}
+
+/* Banner Section */
+.banner {
+  position: relative;
+  height: 800px;
+  background: url('./career.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card-overlay h3 {
+  font-size: 20px;
+  margin: 0;
+  z-index: 1;
+  color:white;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+}
+
+
+.card-overlay h3 svg {
+  transition: transform 0.3s ease; 
+}
+
+.card-overlay h3 :hover svg {
+  transform: translateX(5px); 
+}
+
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin: 0;
+  z-index: 1;
+  color:#f4a41a;
+}
+
+.banner p {
+  font-size: 16px;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+/* Wrapper for product rows */
+.product-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; /* Space between rows */
+}
+
+/* Styling for each row */
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Space between cards in a row */
+}
+
+/* Rest of the styles for product cards */
+.product-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When elements come into view */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+

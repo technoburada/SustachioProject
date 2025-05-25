@@ -1,0 +1,295 @@
+.pricing-container {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  padding: 80px;
+  background-color: #f8f6ec;
+  font-family: Arial, sans-serif;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  max-width: 1200px; 
+}
+
+.pricingdetailsection-title h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.pricingdetailsection-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Billing Toggle Styles */
+.pricingbilling-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  color: #666;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.pricingbilling-toggle span {
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.pricingbilling-toggle .pricingactive {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.pricingbilling-toggle .pricingactive1 {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.pricingtoggle-switch {
+  position: relative;
+  width: 62px;
+  height: 30px;
+  background-color: #C5CE38;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 20px;
+}
+
+.pricingtoggle-switch .pricingswitch {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.3s ease;
+}
+
+.pricingtoggle-switch .pricingswitch.pricingannual {
+  left: 33px;
+}
+
+/* Ensure all cards have the same size */
+.pricing-card {
+  flex: 1 1 300px;
+  max-width: 450px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.pricing-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.pricing-card p {
+  color: #777;
+  font-size: 14px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.discounted-price {
+  color: #4caf50;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.join-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #4caf50;
+}
+
+.join-button:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card ul {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.pricing-card ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.pricing-card ul li .pricingdetailactive-icon {
+  color: #4caf50;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.featured-addons,
+.exclusive-addons {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.featured-addons p,
+.exclusive-addons p {
+  font-size: 12px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.note {
+  font-size: 10px;
+  color: #999;
+  margin-top: 20px;
+}
+
+/* Highlight Business Plan */
+.detailbusiness {
+  position: relative;
+  background: white;
+  border: 6px solid #4caf50; 
+  border-radius: 12px; 
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  overflow: hidden; 
+}
+
+/* Green top section */
+.detailbusiness::before {
+  content: "Recommended";
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: -3px;
+  left: 0; 
+  right: 0; 
+  height: 30px;
+  background: #4caf50;
+  text-align: center;
+  line-height: 30px;
+}
+
+
+
+.detailbusiness h2 {
+  color: #4caf50; 
+}
+
+.detailbusiness .join-button {
+  background-color: #ff9800; 
+}
+
+.detailbusiness .price {
+  color: #333;
+  font-size: 38px; 
+}
+
+.detailbusiness .discounted-price {
+  color: #4caf50;
+  font-size: 20px; 
+  position: relative;
+}
+
+.detailbusiness:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card .divider {
+  width: 100%; 
+  height: 4px; 
+  background: linear-gradient(45deg, #ff8c00, #d3d3d3, #4caf50);
+  border-radius: 5px; 
+  margin: 20px auto; 
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .pricing-container {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .pricing-card {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .pricingbilling-toggle {
+    top: 30px;
+    right: 0;
+  }
+
+  .pricingtoggle-switch {
+    width: 50px;
+    height: 25px;
+  }
+
+  .pricingtoggle-switch .pricingswitch {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+  }
+
+  .pricing-card {
+    width: 100%;
+    margin: 20px 0;
+    min-height: 350px; 
+  }
+
+  .pricingbilling-toggle {
+    top: 20px;
+    right: 0;
+  }
+
+  .pricingtoggle-switch {
+    width: 45px;
+    height: 25px;
+  }
+
+  .pricingtoggle-switch .pricingswitch {
+    width: 18px;
+    height: 18px;
+  }
+}

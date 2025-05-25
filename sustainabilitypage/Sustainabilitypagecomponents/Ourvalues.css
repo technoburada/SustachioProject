@@ -1,0 +1,61 @@
+.our-values {
+    text-align: center;
+    padding: 2rem;
+    background-color: #F8F7F0;
+    font-family: Arial, sans-serif;
+    margin-left: 325px;
+    margin-right: 325px;
+    border-radius: 20px;
+  }
+  
+  .our-values h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .our-values p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+  
+  .values-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .value-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #059669;
+  }
+  
+  .value-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .value-card p {
+    font-size: 0.9rem;
+    color: #6b7280;
+    line-height: 1.5;
+  }
+  

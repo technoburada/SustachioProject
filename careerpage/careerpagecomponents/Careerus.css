@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.JoinUs {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Background Section */
+.JoinUs-background {
+  background-image: url("./join.png"); 
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #000;
+}
+
+/* Overlay styles */
+.JoinUs-background .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.JoinUs-background:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6); 
+}
+
+/* Content Section */
+.JoinUs-content {
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(0); 
+  margin: 0 auto; 
+}
+
+.JoinUs-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #218838;
+}
+
+/* Buttons Section */
+.JoinUs-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; 
+}
+
+.JoinUs-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.JoinUs-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Join Team Button */
+.JoinUs-button.join-team {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.JoinUs-button.join-team:hover {
+  background-color: #ffc107;
+  transform: scale(1.05);
+}
+
+/* Culture Button */
+.JoinUs-button.culture {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.JoinUs-button.culture:hover {
+  background-color: #218838;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Description Text */
+.JoinUs-description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: center;
+}

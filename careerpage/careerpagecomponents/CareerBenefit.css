@@ -1,0 +1,72 @@
+.careerbenefits-section {
+  padding: 40px 20px;
+  background-color: #f8f6ec;
+  text-align: center;
+}
+
+.careerbenefits-header h5 {
+  color: #28a745;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.careerbenefits-header h2 {
+  color: #f4a41a;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.careerbenefits-header p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.careerbenefits-grid { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 0px;
+  justify-items: center; /* Centers the items horizontally */
+}
+
+.careerbenefit-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 70%; /* Adjust as needed */
+  margin-top: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.careerbenefit-card:hover {
+  transform: scale(1.05);
+}
+
+.careerbenefit-card .icon {
+  border-radius: 50%;
+  color: #F8F7F0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.careerbenefit-card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.careerbenefit-card p {
+  font-size: 14px;
+  color: #28a745;
+  line-height: 1.6;
+}

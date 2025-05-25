@@ -1,0 +1,47 @@
+.aboutcompanystats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 3rem;
+  padding: 5rem;
+  flex-wrap: wrap;
+  min-height: 10vh; 
+}
+
+.aboutcompanystat-item {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #f8f6ec;
+  padding: 20px;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutcompanystat-item:hover {
+  transform: scale(1.2);
+}
+
+.aboutcompanystat-item h2 {
+  font-size: 3rem;
+  color: #4caf50;
+  margin: 0;
+}
+
+.aboutcompanystat-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.aboutcompanystat-item .icon {
+  font-size: 2.5rem;
+  color: #f4a41a;
+  margin-bottom: 0.5rem;
+}

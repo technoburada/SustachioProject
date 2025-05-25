@@ -1,0 +1,187 @@
+/* Hero Section Styling */
+.homehero-section {
+  font-family: "Covered By Your Grace", sans-serif;
+}
+
+/* Background and Overlay */
+.homehero-background {
+  margin-top: 140px;
+  position: relative;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.homehero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  color: white;
+  padding: 20px;
+}
+
+/* Hero Text */
+.homewelcome-text {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.homewelcome-textsmile-icon {
+  font-size: 2rem;
+  color: #777; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.homehero-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: #EEC044;
+  text-align: left;
+}
+
+.homehero-text h3 {
+  color: #EEC044;
+  font-family: "Covered By Your Grace", sans-serif;
+}
+
+.homehero-text .leaf-icon {
+  color: #4caf50;
+  text-align: left;
+  font-size: 40px;
+}
+
+.homehero-text i {
+  color: #EEC044;
+}
+
+.homehero-description {
+  font-size: 16px;
+  margin: 20px 0;
+  line-height: 1.6;
+  text-align: left;
+  width: 60%;
+}
+
+/* Discover Button */
+.homediscover-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  top: 100px;
+}
+
+.homediscover-button:hover {
+  background-color: #fcb813;
+  transform: scale(1.05);
+}
+
+.homediscover-button svg {
+  transition: transform 0.3s ease;
+}
+
+.homediscover-button:hover svg {
+  transform: translateX(5px);
+}
+
+/* Vertical Divider */
+.vertical-barhero {
+  width: 1px;
+  height: 70px;
+  background-color: #EEC044;
+  margin: 0 15px;
+}
+
+/* Info Section Styling */
+.infohome-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #f8f6ec;
+  padding: 20px 0;
+  width: 80%;
+  margin-top: -70px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  margin-top: 100px;
+}
+
+.infohome-box {
+  text-align: center;
+  flex: 1;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.infohome-box:hover {
+  transform: scale(1.2);
+}
+
+.infohome-box i {
+  font-size: 40px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.infohome-box h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.infohome-box p {
+  color: #777;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homehero-section {
+    text-align: center;
+  }
+
+  .homehero-text h1 {
+    font-size: 32px;
+  }
+
+  .homehero-text h3 {
+    font-size: 22px;
+  }
+
+  .homehero-description {
+    width: 80%;
+    text-align: center;
+  }
+
+  .infohome-section {
+    flex-direction: column;
+    width: 90%;
+    padding: 30px;
+  }
+
+  .infohome-box {
+    margin-bottom: 20px;
+  }
+}

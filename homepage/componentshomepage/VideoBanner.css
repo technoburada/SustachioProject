@@ -1,0 +1,68 @@
+.homevideo-banner {
+  position: relative;
+  background: url("./videobanner.png") no-repeat center center/cover;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto; 
+  border-radius: 10px;
+  align-items: center;
+}
+
+
+  
+  .homevideo-overlay {
+    position: absolute;
+    text-align: center;
+    background: rgba(163, 161, 161, 0.5); /* Dark overlay */
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .homevideo-overlay h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color:#fcb813;
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+    position: relative;
+    top:250px;
+    left:50px;
+  }
+  
+  .homeplay-button {
+    background-color: #fff;
+    color: #4caf50; /* Green color */
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    left:200px;
+    top:175px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .homeplay-button:hover {
+    background-color: #fcb813;
+    transform: scale(1.1);
+  }
+  
+  .homeplay-button i {
+    margin-left: 2px;
+  }
+
+  .homevideo-frame {
+    width: 100%; 
+    height: 100%;
+    border-radius: 10px; 
+}
+
+  

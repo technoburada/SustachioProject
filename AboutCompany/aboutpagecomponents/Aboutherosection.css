@@ -1,0 +1,99 @@
+.Aboutherosection-container {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+  }
+  
+
+.Aboutherosectiontree-container {
+    width: 100%;
+}
+
+.Aboutherosection-content {
+    background: #F8F7F0;
+    color: black;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom:40px;
+    font-size: 18px;
+    position: absolute;
+    top: 600px;
+    width: 100%;
+  }
+.Aboutherosection-image {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.Aboutherosection-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.Aboutherosection-img.active {
+    opacity: 1;
+}
+
+.Aboutherosection-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.Aboutherosection-text {
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    top: 250px;
+}
+
+
+.Aboutherosection-icons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    position: relative;
+    top: 30px;
+    z-index: 2;
+}
+
+.Aboutherosection-icon-box {
+    background: #f9a826;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.Aboutherosection-icon-box:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.5);
+}

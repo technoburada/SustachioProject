@@ -1,0 +1,142 @@
+.benefit-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f8f6ec;
+  width: 70%;
+  border-radius: 20px;
+  margin: 0 auto; /* Centers the section horizontally */
+}
+
+
+.homebenefitleft-content {
+  position: relative;
+  flex: 1;
+}
+
+.background-image {
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.background-image:hover {
+  transform: scale(1.05);
+}
+
+.text-overlay {
+  position: absolute;
+  left: 65%;
+  background-color: #fcb813;
+  color: #fff;
+  width: 25%;
+  height: 20%;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 0.3;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  bottom: 300px;
+}
+
+.homebenefitright-content {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.homebenefitright-content h5 {
+  font-size: 18px;
+  color: #fcb813;
+  margin-bottom: 10px;
+}
+
+.homebenefitright-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.homebenefitright-content p {
+  color: #777;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.homebenefitright-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.homebenefitright-content li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.homebenefitright-content li i {
+  color: #4caf50;
+  font-size: 18px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.homebenefitright-content li span {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.benefitdiscover-more {
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  position: absolute;
+  right: 16%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.benefitdiscover-more:hover {
+  background-color: #fcb813;
+  transform: scale(1.05);
+}
+
+.benefitdiscover-more svg {
+  transition: transform 0.3s ease;
+}
+
+.benefitdiscover-more:hover svg {
+  transform: translateX(5px);
+}
+
+/* NEW STYLES FOR IMAGE GRID */
+.homebenefitimage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.homebenefitgrid-item {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.homebenefitgrid-item:hover {
+  transform: scale(1.05);
+}
+
+.homebenefitgrid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}

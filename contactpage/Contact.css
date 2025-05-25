@@ -1,0 +1,197 @@
+/* Header Section */
+.contactpage-header {
+  background-image: url('./contactus.png'); 
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 20px; 
+}
+
+.contactpage-header-text h1:hover {
+  color: #f4a41a; 
+  transform: scale(1.05);
+}
+
+/* Contact Details Section */
+.contactpage-details {
+  display: flex;
+  gap: 50px;
+  margin-left: 350px;
+  margin-right: 350px; 
+  width: calc(100% - 700px); 
+}
+
+.contact-box {
+  border-radius: 10px;
+  padding: 20px; 
+  text-align: center; 
+}
+
+.contactpageabout {
+  background-color: #4BAF47;
+  height: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.contactpageabout:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.contactpagecontact {
+  background-color: #C5CE38;
+  height: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.contactpagecontact:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contactpageaddress {
+  background-color: #EEC044;
+  height: 200px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactpageaddress:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.contactpage-details h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: left; 
+  padding-left: 20px; 
+}
+
+.contactpage-details p {
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  padding-left: 20px;
+  width: 90%; 
+}
+
+/* Map and Contact Form Section */
+.contactpage-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #f8f6ec;
+  width: calc(100% - 700px);
+  border-radius: 20px;
+  margin-left: 350px;
+  margin-right: 350px; 
+}
+
+.contactpagemap-container {
+  flex: 1;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.contactpage-form {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactpage-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #EEC044;
+  text-align: center; 
+}
+
+.contactpage-form input,
+.contactpage-form textarea {
+  width: 96%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-color: #28a745;
+}
+
+.contactpage-form input:hover,
+.contactpage-form textarea:hover {
+  box-shadow: 0px 4px 6px rgba(29, 171, 16, 0.663); 
+}
+
+.contactpage-form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.contactpage-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contactpage-form button:hover {
+  background-color: #f4a41a; 
+  transform: scale(1.05);
+}
+
+.contactpage-form button i {
+  margin-right: 10px;
+}
+
+/* Phone Input Styling */
+.contactpageform-phone {
+  margin-bottom: 15px;
+}
+
+.contactpageform-phone .react-tel-input input {
+  width: 100% !important; 
+  height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactpageform-phone .react-tel-input input:hover {
+  transform: scale(1.02); 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

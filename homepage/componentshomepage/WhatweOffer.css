@@ -1,0 +1,124 @@
+.what-we-offer {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f6ec;
+
+}
+
+.weoffersection-subtitle {
+  color: #fcb813;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  bottom: 30px;
+}
+
+.weoffersection-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+  bottom: 30px;
+}
+
+.weofferservice-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  justify-content: center;
+  max-width: 1100px; 
+  margin: 0 auto; 
+}
+
+.weofferservice-card {
+  width: 100%;
+  max-width: 350px; 
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weofferservice-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.weofferservice-image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-bottom: 1px solid #f8f6ec;
+}
+
+.weofferservice-content {
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.weofferservice-icon {
+  font-size: 30px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.weofferservice-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.weofferservice-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.weofferservice-button:hover {
+  background-color: #fcb813;
+  transform: scale(1.05);
+}
+
+.weofferservice-button svg {
+  transition: transform 0.3s ease;
+}
+
+.weofferservice-button:hover svg {
+  transform: translateX(5px);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .weofferservice-cards {
+    grid-template-columns: 1fr; 
+  }
+
+  .weofferservice-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .weofferservice-image {
+    height: 200px;
+  }
+}

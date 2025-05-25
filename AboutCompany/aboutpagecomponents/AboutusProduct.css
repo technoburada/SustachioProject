@@ -1,0 +1,168 @@
+.about-company { 
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  width: 100%; 
+  margin: 0 auto;
+}
+
+.aboutherocontent-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.aboutheroimage-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 80px;
+}
+
+.aboutherosplit-image {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.aboutheroimage-section {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.aboutheroimage-section:hover {
+  transform: scale(1.05);
+}
+
+.aboutherotop-left {
+  background-image: url("./pistachio.png"); 
+}
+
+.aboutherotop-right, .aboutherobottom-left {
+  background-image: url("./beerwaste.png"); 
+}
+
+.aboutherobottom-right {
+  background-image: url("./pistachio.png"); 
+}
+
+.aboutherotext-section {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.aboutherosubtitle {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.aboutherotitle {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fcb813;
+}
+
+.aboutherodescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.aboutherofeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.aboutherofeatures li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.aboutherofeatures li::before {
+  content: "✔";
+  color: #4caf50;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.aboutherodiscover-button {
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.aboutherodiscover-button:hover {
+  background-color: #fcb813;
+  transform: scale(1.05);
+}
+
+.aboutherodiscover-button svg {
+  transition: transform 0.3s ease;
+}
+
+.aboutherodiscover-button:hover svg {
+  transform: translateX(5px);
+}
+
+.aboutheroimage3 {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 300px;
+  bottom: 50px;
+}
+
+.aboutheroimage3:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .aboutherocontent-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutheroimage-box {
+    order: 2;
+  }
+
+  .aboutherotext-section {
+    order: 1;
+  }
+
+  .aboutheroimage3 {
+    position: static;
+    margin-top: 20px;
+  }
+}

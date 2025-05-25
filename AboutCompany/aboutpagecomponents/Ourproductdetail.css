@@ -1,0 +1,96 @@
+.companyproductdetail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+}
+
+.companyproductdetail h1 {
+position:relative;
+left:580px;
+color:#3cb043;
+bottom:150px;
+text-align: center;
+}
+
+
+.companyproductdetailfood-image {
+  width: 150%;
+  height: 150%;
+  border-radius: 10px;
+  position: relative;
+  left:500px;
+  bottom:100px;
+  transform: rotate(-10deg);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.companyproductdetailfood-image:hover{
+  transform: scale(1.1);
+
+}
+
+.companyproductdetaildetail-box {
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  background: #f1f9f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.companyproductdetaildetail-box h3 {
+  font-size: 1.2rem;
+  color: #3cb043;
+  margin-bottom: 10px;
+}
+
+.companyproductdetaildetail-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.companyproductdetailicon {
+  font-size: 2rem;
+  color: #3cb043;
+  margin-bottom: 10px;
+}
+
+.long-shelf-life {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  right:350px;
+  bottom: 100px;
+}
+
+.compostable {
+position: relative;
+  left:350px;
+  bottom:200px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.durable {
+  position: relative;
+  top:200px;
+  right:200px;;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.long-shelf-life:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.compostable:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.durable:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+

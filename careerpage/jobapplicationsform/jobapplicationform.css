@@ -1,0 +1,300 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Job Application Container */
+.job-application-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* See All Jobs Button */
+.see-all-jobs-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  gap: 10px;
+  
+}
+
+.see-all-jobs-button:hover {
+  background-color: #EEC044;
+}
+
+.see-all-jobs-button svg {
+  transition: transform 0.3s ease;
+}
+
+.see-all-jobs-button:hover svg {
+  transform: translateX(5px);
+}
+
+/* Job Application Form */
+.job-application-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px; 
+}
+
+.job-application-form h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.job-application-form p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+/* Form Groups */
+.jobapplicationform-group {
+  margin-bottom: 20px;
+}
+
+.jobapplicationform-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+
+/* Input Fields */
+.jobapplicationform-row1 {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  width: 1000px;
+}
+
+/* Input Fields */
+.jobapplicationform-row2 {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  width: 1000px;
+}
+
+/* Input Fields */
+.jobapplicationform-row3 {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  width: 1000px;
+}
+/* Input Fields */
+.jobapplicationform-row4 {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  width: 1000px;
+}
+
+/* Input Fields */
+.jobapplicationform-row5 {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+  width: 1000px;
+}
+
+/* Wrapper for each input field with icon */
+.input-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+
+}
+
+.input-with-icon label {
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: -18px; 
+  left: 0;
+  color: #333;
+}
+
+/* Input Styling */
+.input-with-icon input {
+  flex: 1;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Adjust icon inside input field */
+.input-with-icon svg {
+  position: absolute;
+  left: 10px;
+  color: #777;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+  width: 97%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Grid Layout */
+.jobapplicationform-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* File Upload */
+.jobapplicationformfile-upload-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.jobapplicationformfile-upload-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.jobapplicationformfile-upload-group input[type="file"] {
+  display: flex;
+  width: 80%;
+  height: 100px;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* File Upload Hover Effect */
+.jobapplicationformfile-upload-group input[type="file"]:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .jobapplicationform-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Form Submit Button */
+.jobapplicationformbutton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.jobapplicationformbutton:hover {
+  background-color: #EEC044;
+}
+
+.jobapplicationformbutton svg {
+  transition: transform 0.3s ease;
+}
+
+.jobapplicationformbutton:hover svg {
+  transform: translateX(640px);
+}
+
+
+/* Optional: Add some spacing for better readability */
+.job-application-form > * {
+  margin-bottom: 15px;
+}
+
+.input-with-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-with-icon input,
+.input-with-icon select {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.input-with-icon svg {
+  position: absolute;
+  left: 10px; 
+  top: 40%;
+  transform: translateY(-50%);
+  color: #4caf50;
+}
+
+.jobapplicationformfile-upload-group svg {
+  color: #4caf50;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+
+/* Footer Links */
+.jobapplicationformcookiefooter {
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.jobapplicationformcookiefooter a {
+  color: #555;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.jobapplicationformcookiefooter a:hover {
+  text-decoration: underline;
+}
+
+.jobapplicationformcookiefooter p {
+  margin: 10px 0 0;
+  font-size: 0.8em;
+  color: #f44336;
+}
+
+

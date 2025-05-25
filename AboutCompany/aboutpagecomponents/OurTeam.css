@@ -1,0 +1,122 @@
+/* Container styles */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    text-decoration: none;
+  }
+  
+  .team-section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+
+  }
+  
+  .team-section-subtitle {
+    font-size: 1.2rem;
+    color: #f4a41a;
+    margin-bottom: 40px;
+  }
+  
+  /* Team Cards Container */
+.team-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Three columns, responsive */
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Card Styles */
+.team-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+  
+  .team-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  
+  .team-card-image {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    border-radius: 10%;
+  }
+  
+  .team-card-content {
+    padding: 14px;
+    text-align: center;
+  }
+  
+  .team-card-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0 0 5px;
+  }
+  
+  .team-card-role {
+    font-size: 1rem;
+    color: #666;
+  }
+
+
+  .team-card-button {
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none; /* Remove default border */
+  }
+  
+  .team-card-button:hover {
+    background-color: #fcb813;
+    transform: scale(1.05);
+  }
+  
+  .team-card-button svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card-button:hover svg {
+    transform: translateX(5px);
+  }
+
+  .team-card-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  
+  .team-card-icons a {
+    color: #f4a41a; /* LinkedIn color */
+    transition: transform 0.3s ease;
+  }
+  
+  .team-card-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+
+
+
+  

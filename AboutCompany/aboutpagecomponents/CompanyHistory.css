@@ -1,0 +1,131 @@
+/* Container */
+.timeline-container {
+    width: 97%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Arial", sans-serif;
+    position: relative;
+    top: 50px;
+    background-color: #f8f6ec;
+  }
+    
+  /* Header Section */
+  .timeline-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fcb813;
+  }
+
+    /* Header Section */
+    .timeline-header h1 i {
+      color: #3cb043;
+    }
+  
+  .timeline-header p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+  }
+  
+  /* Timeline Section */
+  .timeline {
+    display: flex;
+    justify-content: center; /* Centers the timeline horizontally */
+    position: relative;
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Optional: Add space around the timeline */
+  }
+
+  /* Line connecting the circles */
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 50%;  
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #3cb043;
+    z-index: 0;
+    width: 63%;
+}
+  
+ /* Individual Timeline Item */
+ .timeline-item {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin: 0 80px; /* Space between timeline items */
+  bottom:16px;
+}
+
+  .timeline-item:hover {
+    color: #4caf50;
+    transform: scale(1.5);
+  }
+  
+  /* Circle in Timeline Item */
+.timeline-item .circle {
+  width: 20px;
+  height: 20px;
+  background-color: #3cb043; 
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid #fcb813;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hover effect for Circle */
+.timeline-item .circle:hover {
+  color: #4caf50;
+  transform: scale(2.1); 
+}
+
+/* Styling for Timeline Item's Title (h3) */
+.timeline-item h3 {
+  font-size: 2.0rem;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+/* Styling for Timeline Item's Description (p) */
+.timeline-item p {
+  font-size: 1.0rem;
+  color: #666;
+}
+  
+  /* Responsive Design */
+  @media (max-width: 908px) {
+    .timeline {
+      flex-direction: column;
+      box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    .timeline:before {
+      height: 100%;
+      width: 2px;
+      left: 50%;
+      top: 0;
+    }
+  
+    .timeline-item {
+      margin-bottom: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .timeline-item h3,
+    .timeline-item p {
+      text-align: center;
+    }
+  
+    .timeline-item .circle {
+      margin: 0 auto;
+    }
+  }
+
+  
+  

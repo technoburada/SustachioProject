@@ -1,0 +1,204 @@
+/* General Styling */
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner Section */
+.banner {
+  margin-top: 140px;
+  position: relative;
+  height: 800px;
+  background: url('./career.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content {
+  z-index: 1;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.banner h1:hover {
+  color: #EEC044;
+  transform: scale(1.05);
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+
+/* Main Content Section */
+.main-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center; 
+}
+
+/* Left Section */
+.job-details {
+  flex: 3;
+  max-width: 800px;
+}
+
+.job-details h2 {
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.job-details h3 {
+  margin: 20px 0 10px;
+}
+
+.job-details ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.job-details p {
+  margin: 10px 0;
+}
+
+/* Right Section */
+.job-summary {
+  flex: 1;
+  max-width: 400px; 
+}
+
+.job-summary-card {
+  border: 1px solid #f8f6ec;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f8f6ec;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 100%;
+}
+
+.job-summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.job-summary-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.job-summary-list li .icon {
+  color: #4caf50;
+  font-size: 20px;
+}
+
+.job-summary-list li div {
+  line-height: 1.4;
+}
+
+.view-all-button, .jobapply-button, .apply-button2 {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-all-button:hover, .jobapply-button:hover, .apply-button2:hover {
+  background-color: #C5CE38;
+  transform: scale(1.05);
+}
+
+.view-all-button svg, .jobapply-button svg, .apply-button2 svg {
+  transition: transform 0.3s ease;
+}
+
+.view-all-button:hover svg, .jobapply-button:hover svg, .apply-button2:hover svg {
+  transform: translateX(5px);
+}
+
+/* Share Section */
+.share-section1 {
+  margin-top: 20px;
+}
+
+.icon-share {
+  color: #4caf50; 
+  margin-right: 8px; 
+  font-size: 40px; 
+  position: relative;
+  top: 16px;
+}
+
+.social-media1 {
+  display: flex;
+  gap: 50px; 
+  justify-content: center; 
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-media1 a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 40px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-media1 a:hover {
+  transform: scale(1.5);
+  color: #EEC044;
+}
+
+/* Footer Apply Button */
+.footer-apply {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.footer-apply .apply-button {
+  font-size: 18px;
+}
+
+/* Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* When elements come into view */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,92 @@
+.successnumber-container {
+    background-color:#f8f6ec;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    width: 80%;
+    margin: 40px auto;
+  }
+  
+  .successnumber-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #76c76b;
+  }
+  
+  
+  .successnumber-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    
+  }
+  
+  
+  .successnumberstat1 {
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #4BAF47;
+    border-radius: 20px;
+    margin: 10px 20px;
+  }
+
+  .successnumberstat1:hover {
+    transform: scale(1.1);
+  }
+
+
+  .successnumberstat2 {
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #C5CE38;
+    border-radius: 20px;
+    margin: 10px 20px;
+  }
+
+  .successnumberstat2:hover {
+    transform: scale(1.1);
+  }
+
+  .successnumberstat3 {
+    text-align: center;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #EEC044;
+    border-radius: 20px;
+    margin: 10px 20px;
+  }
+
+  .successnumberstat3:hover {
+    transform: scale(1.1);
+  }
+  
+  .successnumbericon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .successnumberstat h3 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .successnumberstat p {
+    font-size: 20px;
+  }
+  
+  .successnumberdivider {
+    width: 1px;
+    height: 80px;
+    background-color: #EEC044;
+  }
+  
